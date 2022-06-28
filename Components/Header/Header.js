@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   TiSocialFacebook,
@@ -20,24 +21,21 @@ const Header = () => {
         ProWeb
       </div>
       <div className="flex justify-center  md:justify-end  gap-6 w-96 order-3">
-        <a
-          href="#"
-          className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500"
-        >
-          <TiSocialFacebook />
-        </a>
-        <a
-          href="#"
-          className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500"
-        >
-          <TiSocialYoutube />
-        </a>
-        <a
-          href="#"
-          className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500"
-        >
-          <TiSocialTwitter />
-        </a>
+        <Link href={"/"}>
+          <a className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500">
+            <TiSocialFacebook />
+          </a>
+        </Link>
+        <Link href={"/"}>
+          <a className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500">
+            <TiSocialYoutube />
+          </a>
+        </Link>
+        <Link href={"/"}>
+          <a className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500">
+            <TiSocialTwitter />
+          </a>
+        </Link>
       </div>
     </header>
   );
