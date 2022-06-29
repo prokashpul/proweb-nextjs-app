@@ -15,3 +15,5 @@ yarn dev
 > - NextJs
 > - TailwindCss
 > - React Icon
+> - React Icon
+> - React swiper
