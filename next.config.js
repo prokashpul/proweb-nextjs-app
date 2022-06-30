@@ -6,6 +6,7 @@ const nextConfig = {
 module.exports = {
   nextConfig,
   images: {
-    domains: ["https://cdn.pixabay.com/"],
+    reactStrictMode: true,
+    domains: ["images.unsplash.com"],
   },
 };
