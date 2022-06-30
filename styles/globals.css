@@ -18,5 +18,9 @@ a {
   box-sizing: border-box;
 }
 .input-box {
-  @apply py-2 px-5 border border-gray-300 bg-white rounded-full placeholder-gray-500 duration-700 w-48 focus:w-64 focus:outline-none focus:border-sky-500 focus:ring-1 my-4 md:my-0 focus:ring-sky-500 block;
+  @apply py-2 px-5 border border-sky-400 bg-white rounded-full placeholder-gray-500 duration-700 w-48 focus:w-64 focus:outline-none focus:border-sky-500 focus:ring-1 my-4 md:my-0 focus:ring-sky-500 block;
+}
+/* global button style */
+.btn {
+  @apply bg-sky-500 py-2 px-4 rounded-xl text-white font-bold text-xl hover:text-sky-500 hover:bg-transparent border-2 shadow-2xl hover:border-sky-500 duration-700 hover:scale-105;
 }

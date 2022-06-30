@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SwiperCore, { Autoplay } from "swiper";
 import BannerBody from "../../_child/bannerBody/BannerBody";
+import { useEffect, useState } from "react";
 
 const posts = [
   {
@@ -45,11 +46,17 @@ const posts = [
   },
 ];
 const Banner = () => {
+  const [posts, setPost] = useState([]);
+  useEffect(() => {
+    fetch("posts.json")
+      .then((res) => res.json())
+      .then((data) => setPost(data));
+  }, []);
   SwiperCore.use(Autoplay);
   return (
     <section className="py-16">
       <div className="container mx-auto md:px-20">
-        <div className="font-bold text-4xl text-center pb-16">Taring</div>
+        {/* <div className="font-bold text-4xl text-center pb-16">Taring</div> */}
         <Swiper
           slidesPerView={1}
           loop={true}
@@ -57,10 +64,10 @@ const Banner = () => {
             delay: 2000,
           }}
         >
-          {posts.map((post) => {
+          {/* map function use */}
+          {posts?.slice(0, 3).map((post) => {
             return (
               <SwiperSlide key={post._id}>
-                {" "}
                 <BannerBody post={post}></BannerBody>
               </SwiperSlide>
             );

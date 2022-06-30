@@ -24,20 +24,21 @@ const Header = () => {
           Pro<span className="text-sky-500">Web</span>
         </div>
       </div>
-      <div className="flex justify-center  md:justify-end  gap-6 w-96 order-3">
+      <div className="flex justify-center  md:justify-end  gap-4 w-96 order-3">
         <Link href={"/"}>
-          <a className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500">
+          <a className=" text-3xl font-bold cursor-pointer text-blue-700 hover:text-sky-500 duration-500">
             <TiSocialFacebook />
           </a>
         </Link>
+
         <Link href={"/"}>
-          <a className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500">
-            <TiSocialYoutube />
+          <a className=" text-3xl font-bold cursor-pointer text-blue-500 hover:text-sky-500 duration-500">
+            <TiSocialTwitter />
           </a>
         </Link>
         <Link href={"/"}>
-          <a className=" text-3xl font-bold cursor-pointer hover:text-sky-500 duration-500">
-            <TiSocialTwitter />
+          <a className=" text-3xl font-bold cursor-pointer text-red-500 hover:text-sky-500 duration-500">
+            <TiSocialYoutube />
           </a>
         </Link>
       </div>
