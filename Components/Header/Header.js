@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
@@ -17,8 +18,11 @@ const Header = () => {
           placeholder="Search.."
         />
       </div>
-      <div className="text-5xl font-bold  w-80 shrink flex justify-center sm:order-2 uppercase">
-        Pro<span className="text-sky-500">Web</span>
+      <div className="md:text-4xl lg:text-5xl text-3xl  font-bold  w-80 shrink flex justify-center items-center gap-2 sm:order-2 uppercase">
+        <Image src={"/images/proweb.png"} alt="logo" width={50} height={50} />{" "}
+        <div>
+          Pro<span className="text-sky-500">Web</span>
+        </div>
       </div>
       <div className="flex justify-center  md:justify-end  gap-6 w-96 order-3">
         <Link href={"/"}>
