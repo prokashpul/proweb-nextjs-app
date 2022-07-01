@@ -48,7 +48,7 @@ import { useEffect, useState } from "react";
 const Banner = () => {
   const [posts, setPost] = useState([]);
   useEffect(() => {
-    fetch("posts.json")
+    fetch("/api/myData")
       .then((res) => res.json())
       .then((data) => setPost(data));
   }, []);

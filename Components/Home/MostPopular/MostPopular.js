@@ -8,7 +8,7 @@ import MostPopularInfo from "../../_child/MostPopularInfo/MostPopularInfo";
 const MostPopular = () => {
   const [posts, setPost] = useState([]);
   useEffect(() => {
-    fetch("posts.json")
+    fetch("/api/myData")
       .then((res) => res.json())
       .then((data) => setPost(data));
   }, []);
