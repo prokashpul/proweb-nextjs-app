@@ -53,6 +53,7 @@ const Banner = () => {
       .then((data) => setPost(data));
   }, []);
   SwiperCore.use(Autoplay);
+
   return (
     <section className="py-16">
       <div className="container mx-auto md:px-20">

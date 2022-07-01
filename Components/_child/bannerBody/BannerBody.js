@@ -3,13 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Auth from "../auth/Auth";
 const BannerBody = ({ post }) => {
-  const { title, discretion, img, auth, authImg, publish, category } =
+  const { title, discretion, img, auth, authImg, publish, category, _id } =
     post || {};
   return (
     <>
       <div className="grid md:grid-cols-2 md:gap-10 m-2 md:m-0 ">
         <div className="image">
-          <Link href={"/"}>
+          <Link href={`post/${_id}`}>
             <a>
               <Image src={img} width={600} height={550} alt="" />
             </a>
@@ -25,7 +25,7 @@ const BannerBody = ({ post }) => {
             </Link>
           </div>
           <div className="title text-3xl font-semibold mt-5 hover:text-sky-500">
-            <Link href={"/"}>
+            <Link href={`post/${_id}`}>
               <a>{title}</a>
             </Link>
           </div>

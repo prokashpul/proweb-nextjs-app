@@ -12,11 +12,12 @@ const LatestPostInfo = ({ post }) => {
     authImg,
     auth,
     regelation,
+    _id,
   } = post || {};
   return (
     <div className="shadow-2xl rounded-lg overflow-hidden group">
       <div className="image group-hover:scale-105 duration-500">
-        <Link href={"/"}>
+        <Link href={`post/${_id}`}>
           <a>
             <Image src={img} width={600} height={450} alt="" />
           </a>
@@ -32,7 +33,7 @@ const LatestPostInfo = ({ post }) => {
           </Link>
         </div>
         <div className="title text-2xl font-semibold mt-2 group-hover:text-sky-500">
-          <Link href={"/"}>
+          <Link href={`post/${_id}`}>
             <a>{title.length > 30 ? title.slice(0, 30) + "...." : title}</a>
           </Link>
         </div>

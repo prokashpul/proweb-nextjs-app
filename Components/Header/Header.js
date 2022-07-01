@@ -20,9 +20,11 @@ const Header = () => {
       </div>
       <div className="md:text-4xl lg:text-5xl text-3xl  font-bold  w-80 shrink flex justify-center items-center gap-2 sm:order-2 uppercase">
         <Image src={"/images/proweb.png"} alt="logo" width={50} height={50} />{" "}
-        <div>
-          Pro<span className="text-sky-500">Web</span>
-        </div>
+        <Link href={`/`}>
+          <a>
+            Pro<span className="text-sky-500">Web</span>
+          </a>
+        </Link>
       </div>
       <div className="flex justify-center  md:justify-end  gap-4 w-96 order-3">
         <Link href={"/"}>

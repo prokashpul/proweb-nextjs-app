@@ -12,11 +12,12 @@ const MostPopularInfo = ({ post }) => {
     authImg,
     auth,
     regelation,
+    _id,
   } = post || {};
   return (
     <div className="shadow-xl rounded-lg overflow-hidden group m-2 md:m-5">
       <div className="image group-hover:scale-105 duration-500">
-        <Link href={"/"}>
+        <Link href={`post/${_id}`}>
           <a>
             <Image src={img} width={600} height={450} alt="" />
           </a>
@@ -32,7 +33,7 @@ const MostPopularInfo = ({ post }) => {
           </Link>
         </div>
         <div className="title text-xl font-semibold mt-2 group-hover:text-sky-500">
-          <Link href={"/"}>
+          <Link href={`post/${_id}`}>
             <a>{title.length > 20 ? title.slice(0, 20) + "...." : title}</a>
           </Link>
         </div>
