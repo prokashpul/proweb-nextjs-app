@@ -28,7 +28,7 @@ const PostId = () => {
   return (
     <>
       <Head>
-        <title>{title} | Proweb Blogs</title>
+        <title>{title} | ProWeb Blogs</title>
       </Head>
       <Layout>
         <div className="max-w-[920px] mx-auto md:py-20">
@@ -41,7 +41,14 @@ const PostId = () => {
             <div className="image w-full">
               <Link href={`post/${_id}`}>
                 <a>
-                  <Image src={img} width={920} height={550} alt="" />
+                  <Image
+                    src={img}
+                    width="100%"
+                    height={50}
+                    layout="responsive"
+                    objectFit="cover"
+                    alt=""
+                  />
                 </a>
               </Link>
             </div>
