@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Proweb Blogs</title>
+        <title>ProWebs Blogs</title>
       </Head>
       <Layout>
         <Banner></Banner>

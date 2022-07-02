@@ -22,7 +22,7 @@ const Header = () => {
         <Image src={"/images/proweb.png"} alt="logo" width={50} height={50} />{" "}
         <Link href={`/`}>
           <a>
-            Pro<span className="text-sky-500">Web</span>
+            Pro<span className="text-sky-500">Webs</span>
           </a>
         </Link>
       </div>
